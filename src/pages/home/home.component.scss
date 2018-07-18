@@ -1,0 +1,78 @@
+@import "~styles/styles";
+
+.home{
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 5%;
+    &-button{
+        width: 40%;
+    }
+    &-buttons{
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 15px;
+    }
+    &-select{
+        margin: 0 auto;
+    }
+    &-label{
+        padding-left: 2%;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    &-container{
+        padding-top: 5%;
+    }
+    .fade-in {
+        animation: fadeIn 0.5s ease-in;
+    }
+    .fade-out {
+        opacity: 0;
+    }
+}
+
+.loader{
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    opacity: 0.2;
+    background: black;
+    position: absolute;
+    &-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.r2 {
+    padding: 5px;
+    border-radius: 0.25rem;
+    color: #17a2b8;
+    border: .5px solid #17a2b8;
+}
+
+.datepicker-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.test-prediction {
+    margin-top: 5%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);        
+    }
+}

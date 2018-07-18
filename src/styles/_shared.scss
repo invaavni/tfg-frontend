@@ -1,0 +1,14 @@
+header{
+    width: 100vw;
+    height: 5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: $color-primary;
+}
+body{
+    background-color: $color-secondary;
+    font-size: 2rem;
+    font-family: monospace;
+}
